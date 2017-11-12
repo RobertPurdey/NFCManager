@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background"
+    tools:context="robert.purdey.nfcmanager.ui.activities.MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_above="@+id/bttn_write"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" />
+
+    <!-- Directs to Write activity -->
+    <Button
+        android:id="@+id/bttn_write"
+        android:textColor="@color/black"
+        android:background="@color/bttn_orange"
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:layout_above="@+id/bttn_read"
+        android:text="@string/write"
+        android:layout_marginBottom="3dp"
+        android:layout_marginHorizontal="3dp"
+        android:onClick="onClickWrite"/>
+
+    <!-- Directs to Read activity -->
+    <Button
+        android:id="@+id/bttn_read"
+        android:textColor="@color/black"
+        android:background="@color/bttn_orange"
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:layout_above="@+id/bttn_tasks"
+        android:text="@string/read"
+        android:layout_marginBottom="3dp"
+        android:layout_marginHorizontal="3dp"/>
+
+    <!-- Directs to Tasks activity -->
+    <Button
+        android:id="@+id/bttn_tasks"
+        android:textColor="@color/black"
+        android:background="@color/bttn_orange"
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:layout_above="@+id/bttn_other"
+        android:text="@string/tasks"
+        android:layout_marginBottom="3dp"
+        android:layout_marginHorizontal="3dp"/>
+
+    <!-- Directs to Other activity -->
+    <Button
+        android:id="@+id/bttn_other"
+        android:textColor="@color/black"
+        android:background="@color/bttn_orange"
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="3dp"
+        android:layout_alignParentBottom="true"
+        android:text="@string/other"/>
+
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">NFC Manager</string>
+
+    <!-- Main menu button titles -->
+    <string name="write">Write</string>
+    <string name="read">Read</string>
+    <string name="other">Other</string>
+    <string name="tasks">Tasks</string>
+
+    <!-- hints -->
+    <string name="hint_longitude">Longitude</string>
+    <string name="hint_latitude">Latitude</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
