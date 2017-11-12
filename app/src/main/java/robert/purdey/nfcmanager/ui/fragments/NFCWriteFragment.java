@@ -6,6 +6,8 @@ import android.support.v4.app.Fragment;
  * Purpose:
  *      Contains callback to send back formatted data to an activity
  *
+ *      Use as fragment in NFCWriteActivity to retrieve NFC Tag data
+ *
  * Developers:
  *  Danny Lieu & Robert Purdey
  *
