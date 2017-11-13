@@ -15,4 +15,17 @@ package robert.purdey.nfcmanager.nfchandling;
 public class NFCValidator
 {
     // validates android phone has NFC enabled
+
+    /**
+     * Purpose:
+     *      Checks if the phone has NFC enabled.
+     *
+     * Returns:
+     *      False - NFC is NOT enabled
+     *      True  - NFC is enabled
+     */
+    public static void validateNFCEnabled()
+    {
+
+    }
 }
