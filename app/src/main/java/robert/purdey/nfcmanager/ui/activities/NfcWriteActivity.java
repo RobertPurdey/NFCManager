@@ -1,6 +1,7 @@
 package robert.purdey.nfcmanager.ui.activities;
 
 import android.nfc.NdefRecord;
+import android.nfc.NfcManager;
 import android.nfc.Tag;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -24,7 +25,6 @@ import robert.purdey.nfcmanager.nfchandling.NfcWriter;
  */
 public class NfcWriteActivity extends AppCompatActivity
 {
-
     /* Handles writing the user data to the NFC tag */
     protected NfcWriter nfcWriter = new NfcWriter();
 
