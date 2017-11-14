@@ -44,7 +44,7 @@ public class NfcWriter
 
         if (validateCanWrite(nfcAdapter, "Test") )
         {
-            if (writeToTag(context, tag, recordToWrite) )
+            if (writeToTag(tag, recordToWrite) )
             {
                 // success
                 isValid = true;
@@ -59,13 +59,12 @@ public class NfcWriter
      *
      * Exceptions are caught and handled.
      *
-     * @param context - activity handling the tap
      * @param tag - NFC tag to write to
      * @param recordToWrite the record to write to the NFC tag
      *
      * @return true if the tag is written to, false otherwise.
      */
-    private boolean writeToTag(Context context, Tag tag, NdefRecord recordToWrite)
+    private boolean writeToTag(Tag tag, NdefRecord recordToWrite)
     {
         String message      = "test message";
         NdefMessage ndefMsg = new NdefMessage(recordToWrite);
