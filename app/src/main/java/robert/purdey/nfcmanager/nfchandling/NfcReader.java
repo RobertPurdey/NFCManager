@@ -12,7 +12,7 @@ package robert.purdey.nfcmanager.nfchandling;
  *
  * Revisions:
  */
-public class NFCReader
+public class NfcReader
 {
     // read from nfc
     // validate nfc tag can be read from

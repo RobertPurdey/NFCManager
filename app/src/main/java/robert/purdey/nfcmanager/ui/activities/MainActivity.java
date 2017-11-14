@@ -40,6 +40,6 @@ public class MainActivity extends AppCompatActivity
      */
     public void onClickWrite(View v)
     {
-        ActivityDirector.startNFCWriteActivity(this);
+        ActivityDirector.startWriteActivity(this);
     }
 }

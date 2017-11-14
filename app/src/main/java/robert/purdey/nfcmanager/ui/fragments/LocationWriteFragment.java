@@ -2,6 +2,7 @@ package robert.purdey.nfcmanager.ui.fragments;
 
 import android.content.Context;
 import android.net.Uri;
+import android.nfc.NdefRecord;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -30,7 +31,7 @@ import robert.purdey.nfcmanager.R;
  *
  * Revisions:
  */
-// todo: after completing NFCWriteFragment, extend from it and redo this class
+// todo: after completing NfcWriteFragment, extend from it and redo this class
 public class LocationWriteFragment extends Fragment
 {
     // TODO: Rename parameter arguments, choose names that match
@@ -66,6 +67,22 @@ public class LocationWriteFragment extends Fragment
         args.putString(ARG_PARAM2, param2);
         fragment.setArguments(args);
         return fragment;
+    }
+
+    /**
+     * Creates a geo location uri formatted for an NFC tag
+     *
+     * @param latitude - latitude coordinate for the geo location to be added
+     * @param longitude - longitude coordinate for the geo location to be added
+     *
+     * @return NdefRecord - Record ready to be written to an NFC tag
+     */
+    // todo: override once inheriting from NfcWriteFragment
+    protected NdefRecord getFormattedData(String latitude, String longitude)
+    {
+
+        String geoUri = "geo:" + latitude + "," + longitude;
+        return NdefRecord.createUri(geoUri);
     }
 
     @Override

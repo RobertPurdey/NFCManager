@@ -4,7 +4,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="robert.purdey.nfcmanager.ui.activities.NFCWriteActivity">
+    tools:context="robert.purdey.nfcmanager.ui.activities.NfcWriteActivity">
+
+    <!-- todo: this should come from a fragment -->
+    <!-- Longitude input -->
+    <EditText
+        android:id="@+id/etxt_longitude"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:inputType="numberSigned"
+        android:hint="@string/hint_longitude"/>
+
+    <!-- Longitude input -->
+    <EditText
+        android:id="@+id/etxt_latitude"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/etxt_longitude"
+        android:layout_marginVertical="5dp"
+        android:inputType="numberSigned"
+        android:hint="@string/hint_latitude" />
 
     <!-- Writes content to NFC tag -->
     <Button

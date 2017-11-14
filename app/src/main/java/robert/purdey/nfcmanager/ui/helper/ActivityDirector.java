@@ -5,7 +5,7 @@ import android.content.Context;
 import android.content.Intent;
 
 import robert.purdey.nfcmanager.ui.activities.MainActivity;
-import robert.purdey.nfcmanager.ui.activities.NFCWriteActivity;
+import robert.purdey.nfcmanager.ui.activities.NfcWriteActivity;
 
 /**
  * Purpose:
@@ -36,9 +36,9 @@ public class ActivityDirector
      *
      * @param context
      */
-    public static void startNFCWriteActivity(Context context)
+    public static void startWriteActivity(Context context)
     {
-        startActivity(context, NFCWriteActivity.class);
+        startActivity(context, NfcWriteActivity.class);
     }
 
     /**

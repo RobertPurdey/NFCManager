@@ -1,12 +1,13 @@
 package robert.purdey.nfcmanager.ui.fragments;
 
+import android.nfc.NdefRecord;
 import android.support.v4.app.Fragment;
 
 /**
  * Purpose:
  *      Contains callback to send back formatted data to an activity
  *
- *      Use as fragment in NFCWriteActivity to retrieve NFC Tag data
+ *      Use as fragment in NfcWriteActivity to retrieve NFC Tag data
  *
  * Developers:
  *  Danny Lieu & Robert Purdey
@@ -16,7 +17,7 @@ import android.support.v4.app.Fragment;
  *
  * Revisions:
  */
-public abstract class NFCWriteFragment extends Fragment
+public abstract class NfcWriteFragment extends Fragment
 {
-    abstract protected String getFormattedData();
+    abstract protected NdefRecord getFormattedData();
 }
